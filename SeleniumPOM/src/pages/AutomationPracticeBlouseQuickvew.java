@@ -27,6 +27,7 @@ public class AutomationPracticeBlouseQuickvew {
     }
     
     
+    // Increase
     public void increase_quantity() {
     	plus.click();
     }
