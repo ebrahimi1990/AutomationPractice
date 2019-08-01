@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-08-01T08:21:13Z" name="Suite" finished-at="2019-08-01T08:22:11Z" duration-ms="58103">
+    <groups>
+      <group name="quickview">
+        <method signature="QuickViewTest.add_to_card()[pri:0, instance:tests.QuickViewTest@48524010]" name="add_to_card" class="tests.QuickViewTest"/>
+        <method signature="QuickViewTest.open_quickview()[pri:0, instance:tests.QuickViewTest@48524010]" name="open_quickview" class="tests.QuickViewTest"/>
+      </group> <!-- quickview -->
+      <group name="Signin">
+        <method signature="SignInTest.Login_N_001()[pri:1, instance:tests.SignInTest@3ee0fea4]" name="Login_N_001" class="tests.SignInTest"/>
+        <method signature="SignInTest.Login_N_002()[pri:2, instance:tests.SignInTest@3ee0fea4]" name="Login_N_002" class="tests.SignInTest"/>
+        <method signature="SignInTest.Login_P_001()[pri:3, instance:tests.SignInTest@3ee0fea4]" name="Login_P_001" class="tests.SignInTest"/>
+      </group> <!-- Signin -->
+    </groups>
+    <test started-at="2019-08-01T08:21:13Z" name="Test" finished-at="2019-08-01T08:22:11Z" duration-ms="58103">
+      <class name="tests.CheckOutTest">
+        <test-method signature="shop_cart()[pri:0, instance:tests.CheckOutTest@4b168fa9]" started-at="2019-08-01T08:21:13Z" name="shop_cart" finished-at="2019-08-01T08:21:30Z" duration-ms="16824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_cart -->
+      </class> <!-- tests.CheckOutTest -->
+      <class name="tests.QuickViewTest">
+        <test-method signature="add_to_card()[pri:0, instance:tests.QuickViewTest@48524010]" started-at="2019-08-01T08:21:13Z" name="add_to_card" finished-at="2019-08-01T08:21:38Z" duration-ms="24925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_to_card -->
+        <test-method signature="open_quickview()[pri:0, instance:tests.QuickViewTest@48524010]" started-at="2019-08-01T08:21:13Z" name="open_quickview" finished-at="2019-08-01T08:21:28Z" duration-ms="14952" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //img[@title='Blouse']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LCE27046', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13132, moz:profile: C:\Users\mmiandar\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 31cd0168-6b6a-45bc-b7e1-f6423e1dd0ac
+*** Element info: {Using=xpath, value=//img[@title='Blouse']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //img[@title='Blouse']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LCE27046', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13132, moz:profile: C:\Users\mmiandar\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 31cd0168-6b6a-45bc-b7e1-f6423e1dd0ac
+*** Element info: {Using=xpath, value=//img[@title='Blouse']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+at pages.AutomationPracticeWomenPage.clickBlouseQuickview(AutomationPracticeWomenPage.java:41)
+at tests.QuickViewTest.open_quickview(QuickViewTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_quickview -->
+      </class> <!-- tests.QuickViewTest -->
+      <class name="tests.SignInTest">
+        <test-method is-config="true" signature="Before()[pri:0, instance:tests.SignInTest@3ee0fea4]" started-at="2019-08-01T08:21:13Z" name="Before" finished-at="2019-08-01T08:21:13Z" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method signature="Login_N_001()[pri:1, instance:tests.SignInTest@3ee0fea4]" started-at="2019-08-01T08:21:38Z" name="Login_N_001" finished-at="2019-08-01T08:21:51Z" duration-ms="12883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_N_001 -->
+        <test-method signature="Login_N_002()[pri:2, instance:tests.SignInTest@3ee0fea4]" started-at="2019-08-01T08:21:51Z" name="Login_N_002" finished-at="2019-08-01T08:22:01Z" duration-ms="9663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_N_002 -->
+        <test-method signature="Login_P_001()[pri:3, instance:tests.SignInTest@3ee0fea4]" started-at="2019-08-01T08:22:01Z" name="Login_P_001" finished-at="2019-08-01T08:22:11Z" duration-ms="10545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_P_001 -->
+      </class> <!-- tests.SignInTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
